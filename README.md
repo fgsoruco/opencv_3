@@ -110,7 +110,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  opencv_3: ^0.0.1
+  opencv_3: ^0.0.1-nullsafety.3
 ```
 
 ### 2. Install it
@@ -129,7 +129,7 @@ $ flutter pub get
 Now in your `Dart` code, you can use:
 
 ```dart
-import 'package:opencv_3/Cv2.dart';
+import 'package:opencv_3/opencv_3.dart';
 ```
 
 # How to use

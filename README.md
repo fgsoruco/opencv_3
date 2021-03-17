@@ -1,13 +1,4 @@
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
-<p align="center"><img src="display/cover_1.gif"/></p>
+<p align="center"><img src="https://github.com/fgsoruco/opencv_3/blob/main/display/cover_1.gif?raw=true"/></p>
 
 <h1 align="center">OpenCV_3</h1>
 
@@ -15,30 +6,30 @@
 
 <p align="center">
   <a href="https://flutter.dev">
-    <img src="display/Platform-Flutter.png"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/Platform-Flutter.png?raw=true"
       alt="Platform" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
-    <img src="display/nullsafety-0.0.1.png"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/nullsafety-0.0.1.png?raw=true"
       alt="Platform" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
-    <img src="display/pub-version.png"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/pub-version.png?raw=true"
       alt="Pub Package" />
   </a>
   <br>
   <a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="display/animated-bsd.png"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/animated-bsd.png?raw=true"
       alt="License: BSD-3-Clause" />
   </a>
   <a href="https://paypal.me/fgsoruco">
-    <img src="display/donate.png"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/donate.png?raw=true"
       alt="Donate" />
   </a>
 </p><br>
 <p align="center">
-    <a href="https://github.com/fgsoruco/opencv_3/master/README-es.md">Español</a>
-    | <a href="https://github.com/fgsoruco/opencv_3/master/README-pt.md">Portugués</a>
+    <a href="https://github.com/fgsoruco/opencv_3/blob/main/README-es.md">Español</a>
+    | <a href="https://github.com/fgsoruco/opencv_3/blob/main/README-pt.md">Portugués</a>
 </p>
 
 ---
@@ -160,7 +151,9 @@ import 'package:opencv_3/Cv2.dart';
 
 ## Module: Image Filtering
 <h2 align="center">Imagen original</h2>
-<img src="display/Test.JPG" class = "center" height = "300px">
+<p align="center">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/Test.JPG?raw=true" align = "center" height = "300px"/>
+</p>
 <h5 align="center">
 <i>from my <a href="https://www.behance.net/gallery/114930481/Jujuy"> behance </a> acount</h5></i>
   
@@ -170,7 +163,7 @@ Some examples
 ## Bilateral Filter
 Must be called within a __async__ function
 
-<img src="display/bilateralFilter.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/bilateralFilter.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -204,7 +197,7 @@ Image.memory(
 
 ## Dilate
 
-<img src="display/dilate.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/dilate.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -226,7 +219,7 @@ Uint8List _byte = await Cv2.dilate(
 
 ## Filter2D
 
-<img src="display/filter2D.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/filter2D.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -247,7 +240,7 @@ Uint8List _byte = await Cv2.filter2D(
 
 ## Median Blur
 
-<img src="display/medianBlur.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/medianBlur.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -267,7 +260,7 @@ Uint8List _byte = await Cv2.medianBlur(
 
 ## MorphologyEx
 
-<img src="display/morphologyEx.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/morphologyEx.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -287,7 +280,7 @@ Uint8List _byte = await Cv2.morphologyEx(
 
 ## PyrMeanShiftFiltering
 
-<img src="display/pyrMeanShiftFiltering.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/pyrMeanShiftFiltering.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -309,7 +302,7 @@ Uint8List _byte = await Cv2.pyrMeanShiftFiltering(
 
 ## Scharr
 
-<img src="display/scharr.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/scharr.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -334,7 +327,7 @@ Uint8List _byte = await Cv2.scharr(
 
 ## Threshold
 
-<img src="display/threshold.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/threshold.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -356,7 +349,7 @@ Uint8List _byte = await Cv2.threshold(
 
 ## AdaptiveThreshold
 
-<img src="display/adaptiveThreshold.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/adaptiveThreshold.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -374,15 +367,13 @@ Uint8List _byte = await Cv2.adaptiveThreshold(
       setState(() {
         _byte;
       });
-
-
 ```
 
 ## Module: Color Space Conversions
 
 ## CvtColor
 
-<img src="display/cvtColor.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/cvtColor.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -404,7 +395,7 @@ Uint8List _byte = await Cv2.cvtColor(
 
 ## ApplyColorMap
 
-<img src="display/applyColorMap.JPG" align = "right" height = "300px">
+<img src="https://github.com/fgsoruco/opencv_3/blob/main/display/applyColorMap.JPG?raw=true" align = "right" height = "300px">
 
 ```dart
 
@@ -412,7 +403,7 @@ Uint8List _byte = await Cv2.cvtColor(
 Uint8List _byte = await Cv2.applyColorMap(
         pathFrom: CVPathFrom.URL,
         pathString:
-          'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/16fe9f114930481.6044f05fca574.jpeg',
+          'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/16fe9f114930481.6044f05fca574.jpeg?raw=true',
         colorMap: Cv2.COLORMAP_JET,
       );
 
@@ -430,7 +421,7 @@ Please file feature requests and bugs at the [issue tracker](https://github.com/
 ## Donate
 To give you a better solution.
 
-[![ko-fi](display/donate-coffee.png)](https://paypal.me/fgsoruco)
+[![ko-fi](https://github.com/fgsoruco/opencv_3/blob/main/display/donate-coffee.png?raw=true)](https://paypal.me/fgsoruco)
 
 * `BTC`: bc1qhy5uer94d4xvp2wgtfg5l6s6jk8gwj6d0ufqvh
 * `BNB`: bnb17z7dqeeyrkhq2l9mx6p3hg6ewvshrpkqqzcpr9

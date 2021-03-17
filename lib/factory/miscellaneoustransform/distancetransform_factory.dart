@@ -1,10 +1,13 @@
+/* 
+ * Copyright (c) 2021 fgsoruco.
+ * See LICENSE for more details.
+ */
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+import 'package:opencv_3/factory/pathfrom.dart';
 import 'package:opencv_3/factory/utils.dart';
-
-import '../pathfrom.dart';
 
 class DistanceTransformFactory {
   static const platform = const MethodChannel('opencv_3');
@@ -50,6 +53,15 @@ class DistanceTransformFactory {
           'maskSize': maskSize
         });
         break;
+      default:
+        _fileAssets = await Utils.imgAssets2Uint8List(pathString);
+        result = await platform.invokeMethod('distanceTransform', {
+          "pathType": 3,
+          "pathString": '',
+          "data": _fileAssets,
+          'distanceType': distanceType,
+          'maskSize': maskSize
+        });
     }
 
     return result;

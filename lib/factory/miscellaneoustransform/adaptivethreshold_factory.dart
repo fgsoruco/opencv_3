@@ -1,11 +1,15 @@
+/* 
+ * Copyright (c) 2021 fgsoruco.
+ * See LICENSE for more details.
+ */
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+import 'package:opencv_3/factory/pathfrom.dart';
 import 'package:opencv_3/factory/utils.dart';
 
-import '../pathfrom.dart';
-
+///Class for process [AdaptiveThreshol]
 class AdaptiveThresholdFactory {
   static const platform = const MethodChannel('opencv_3');
 
@@ -22,6 +26,18 @@ class AdaptiveThresholdFactory {
     Uint8List _fileAssets;
 
     Uint8List? result;
+    int adaptiveMethodTemp = (adaptiveMethod > 1)
+        ? 1
+        : (adaptiveMethod < 0)
+            ? 0
+            : adaptiveMethod;
+
+    int thresholdTypeTemp = (thresholdType > 1)
+        ? 1
+        : (thresholdType < 0)
+            ? 0
+            : thresholdType;
+
     switch (pathFrom) {
       case CVPathFrom.GALLERY_CAMERA:
         result = await platform.invokeMethod('adaptiveThreshold', {
@@ -29,8 +45,8 @@ class AdaptiveThresholdFactory {
           "pathString": pathString,
           "data": Uint8List(0),
           'maxValue': maxValue,
-          'adaptiveMethod': adaptiveMethod,
-          'thresholdType': thresholdType,
+          'adaptiveMethod': adaptiveMethodTemp,
+          'thresholdType': thresholdTypeTemp,
           'blockSize': blockSize,
           'constantValue': constantValue,
         });
@@ -42,8 +58,8 @@ class AdaptiveThresholdFactory {
           "pathString": '',
           "data": await _file.readAsBytes(),
           'maxValue': maxValue,
-          'adaptiveMethod': adaptiveMethod,
-          'thresholdType': thresholdType,
+          'adaptiveMethod': adaptiveMethodTemp,
+          'thresholdType': thresholdTypeTemp,
           'blockSize': blockSize,
           'constantValue': constantValue
         });
@@ -56,8 +72,8 @@ class AdaptiveThresholdFactory {
           "pathString": '',
           "data": _fileAssets,
           'maxValue': maxValue,
-          'adaptiveMethod': adaptiveMethod,
-          'thresholdType': thresholdType,
+          'adaptiveMethod': adaptiveMethodTemp,
+          'thresholdType': thresholdTypeTemp,
           'blockSize': blockSize,
           'constantValue': constantValue
         });

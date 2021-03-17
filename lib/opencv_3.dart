@@ -1,5 +1,8 @@
+/* 
+ * Copyright (c) 2021 fgsoruco.
+ * See LICENSE for more details.
+ */
 import 'dart:typed_data';
-
 import 'package:flutter/services.dart';
 import 'package:opencv_3/factory/colormaps/applycolormap_factory.dart';
 import 'package:opencv_3/factory/colorspace/cvtcolor_factory.dart';

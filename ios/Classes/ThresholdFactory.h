@@ -1,8 +1,8 @@
 //
-//  ThresholdFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ThresholdFactory : NSObject
 
-//thresholdValue: Double, maxThresholdValue: Double, thresholdType: Int
+
 
 + (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data thresholdValue: (double)thresholdValue maxThresholdValue: (double) maxThresholdValue thresholdType: (int) thresholdType result: (FlutterResult) result;
+
 
 @end
 

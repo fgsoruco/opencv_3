@@ -1,8 +1,8 @@
 //
-//  SqrBoxFilterFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-+ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data outputDepth: (int)outputDepth kernelSize: (double[]) kernelSizeDouble result: (FlutterResult) result;
++ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data outputDepth: (int)outputDepth kernelSize: (double[_Nonnull]) kernelSizeDouble result: (FlutterResult) result;
 
 
 @end

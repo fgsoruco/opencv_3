@@ -8,6 +8,7 @@ import org.opencv.imgcodecs.Imgcodecs
 import org.opencv.imgproc.Imgproc
 import java.io.FileInputStream
 import java.io.InputStream
+import io.flutter.plugin.common.MethodChannel
 
 class BoxFilterFactory {
     //Module: Image Filtering

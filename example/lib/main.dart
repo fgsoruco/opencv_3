@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:opencv_3/factory/pathfrom.dart';
 import 'package:opencv_3/opencv_3.dart';
 //uncomment when image_picker is installed
-//import 'package:image_picker/image_picker.dart';
+import 'package:image_picker/image_picker.dart';
 
 void main() {
   runApp(MyApp());
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String _versionOpenCV = 'OpenCV';
   bool _visible = false;
   //uncomment when image_picker is installed
-  //final picker = ImagePicker();
+  final picker = ImagePicker();
 
   @override
   void initState() {
@@ -57,12 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
     required int thresholdType,
   }) async {
     try {
+      //test with threshold
       _byte = await Cv2.threshold(
         pathFrom: pathFrom,
         pathString: pathString,
-        thresholdValue: thresholdValue,
         maxThresholdValue: maxThresholdValue,
         thresholdType: thresholdType,
+        thresholdValue: thresholdValue,
       );
 
       setState(() {
@@ -111,8 +112,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _testFromCamera() async {
     //uncomment when image_picker is installed
-    //final pickedFile = await picker.getImage(source: ImageSource.camera);
-    //_image = File(pickedFile!.path);
+    final pickedFile = await picker.getImage(source: ImageSource.camera);
+    _image = File(pickedFile!.path);
     testOpenCV(
       pathFrom: CVPathFrom.GALLERY_CAMERA,
       pathString: _image!.path,
@@ -128,8 +129,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _testFromGallery() async {
     //uncomment when image_picker is installed
-    //final pickedFile = await picker.getImage(source: ImageSource.gallery);
-    //_image = File(pickedFile!.path);
+    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    _image = File(pickedFile!.path);
     testOpenCV(
       pathFrom: CVPathFrom.GALLERY_CAMERA,
       pathString: _image!.path,

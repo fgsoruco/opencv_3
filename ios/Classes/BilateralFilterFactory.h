@@ -1,8 +1,8 @@
 //
-//  BilateralFilterFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 08/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (void) processWhitPathType: (int) pathType pathString: (NSString *) pathString data: (FlutterStandardTypedData *) data diameter: (int) diameter sigmaColor:(double) sigmaColor sigmaSpace:(double) sigmaSpace borderType:(int) borderType result: (FlutterResult) result;
+
 
 @end
 

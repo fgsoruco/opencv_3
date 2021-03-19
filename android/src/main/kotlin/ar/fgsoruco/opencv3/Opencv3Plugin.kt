@@ -1,18 +1,22 @@
 package ar.fgsoruco.opencv3
 
-import androidx.annotation.NonNull
 import ar.fgsoruco.opencv3.factory.colormaps.ApplyColorMapFactory
 import ar.fgsoruco.opencv3.factory.colorspace.CvtColorFactory
 import ar.fgsoruco.opencv3.factory.imagefilter.*
 import ar.fgsoruco.opencv3.factory.miscellaneous.AdaptiveThresholdFactory
 import ar.fgsoruco.opencv3.factory.miscellaneous.DistanceTransformFactory
 import ar.fgsoruco.opencv3.factory.miscellaneous.ThresholdFactory
+import org.opencv.android.OpenCVLoader
+import org.opencv.core.Core
+
+import androidx.annotation.NonNull
+
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
-import org.opencv.android.OpenCVLoader
-import org.opencv.core.Core
+import io.flutter.plugin.common.MethodChannel.Result
+import io.flutter.plugin.common.PluginRegistry.Registrar
 
 /** Opencv_3Plugin */
 class Opencv3Plugin: FlutterPlugin, MethodCallHandler {
@@ -38,6 +42,7 @@ class Opencv3Plugin: FlutterPlugin, MethodCallHandler {
     }
 
     when (call.method) {
+
       "getVersion" -> {
         try {
           result.success(Core.VERSION)
@@ -45,6 +50,7 @@ class Opencv3Plugin: FlutterPlugin, MethodCallHandler {
           result.error("OpenCV-Error", "Android: "+e.message, e)
         }
       }
+      
       //Module: Image Filtering
       "bilateralFilter" -> {
         try {
@@ -179,19 +185,6 @@ class Opencv3Plugin: FlutterPlugin, MethodCallHandler {
           result.error("OpenCV-Error", "Android: "+e.message, e)
         }
       }
-      "pyrDown" -> {
-        try {
-          PyrDownFactory.process(
-                  call.argument<Int>("pathType") as Int,
-                  call.argument<String>("pathString") as String,
-                  call.argument<ByteArray>("data") as ByteArray,
-                  call.argument<ArrayList<Int>>("kernelSize") as ArrayList<Int>,
-                  call.argument<Int>("borderType") as Int,
-                  result)
-        } catch (e: Exception) {
-          result.error("OpenCV-Error", "Android: "+e.message, e)
-        }
-      }
       "pyrMeanShiftFiltering" -> {
         try {
           PyrMeanShiftFilteringFactory.process(
@@ -200,19 +193,6 @@ class Opencv3Plugin: FlutterPlugin, MethodCallHandler {
                   call.argument<ByteArray>("data") as ByteArray,
                   call.argument<Double>("spatialWindowRadius") as Double,
                   call.argument<Double>("colorWindowRadius") as Double,
-                  result)
-        } catch (e: Exception) {
-          result.error("OpenCV-Error", "Android: "+e.message, e)
-        }
-      }
-      "pyrUp" -> {
-        try {
-          PyrUpFactory.process(
-                  call.argument<Int>("pathType") as Int,
-                  call.argument<String>("pathString") as String,
-                  call.argument<ByteArray>("data") as ByteArray,
-                  call.argument<ArrayList<Int>>("kernelSize") as ArrayList<Int>,
-                  call.argument<Int>("borderType") as Int,
                   result)
         } catch (e: Exception) {
           result.error("OpenCV-Error", "Android: "+e.message, e)

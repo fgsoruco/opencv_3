@@ -1,8 +1,8 @@
 //
-//  AdaptiveThresholdFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdaptiveThresholdFactory : NSObject
 
-//maxValue: Double, adaptiveMethod: Int, thresholdType: Int, blockSize: Int, constantValue: Double
+
 + (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data maxValue: (double)maxValue adaptiveMethod: (int) adaptiveMethod thresholdType: (int) thresholdType blockSize: (int) blockSize constantValue: (int) constantValue result: (FlutterResult) result;
 
 

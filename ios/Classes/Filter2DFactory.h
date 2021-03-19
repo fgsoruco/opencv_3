@@ -1,8 +1,8 @@
 //
-//  Filter2DFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Filter2DFactory : NSObject
 
-+ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data outputDepth: (int)outputDepth kernelSize: (int[]) kernelSizeDouble result: (FlutterResult) result;
+
++ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data outputDepth: (int)outputDepth kernelSize: (int[_Nonnull]) kernelSizeDouble result: (FlutterResult) result;
+
 
 @end
 

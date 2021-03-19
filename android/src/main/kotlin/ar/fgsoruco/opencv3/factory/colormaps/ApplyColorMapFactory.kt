@@ -6,6 +6,7 @@ import org.opencv.imgcodecs.Imgcodecs
 import org.opencv.imgproc.Imgproc
 import java.io.FileInputStream
 import java.io.InputStream
+import io.flutter.plugin.common.MethodChannel
 
 class ApplyColorMapFactory {
     companion object{
@@ -18,7 +19,6 @@ class ApplyColorMapFactory {
         }
 
         //Module: ColorMaps in OpenCV
-        //probar si funciona sino agregar conversion a escala de grices
         private fun applyColorMapS(pathString: String, colorMap: Int): ByteArray? {
             val inputStream: InputStream = FileInputStream(pathString.replace("file://", ""))
             val data: ByteArray = inputStream.readBytes()

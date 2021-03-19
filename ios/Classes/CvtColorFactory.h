@@ -1,8 +1,8 @@
 //
-//  CvtColorFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 08/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO

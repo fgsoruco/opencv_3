@@ -1,8 +1,8 @@
 //
-//  DistanceTransformFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DistanceTransformFactory : NSObject
 
-//distanceType: Int, maskSize: Int
+
 + (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data distanceType: (int) distanceType maskSize: (int) maskSize result: (FlutterResult) result;
+
 
 @end
 

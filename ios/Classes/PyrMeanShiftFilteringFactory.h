@@ -1,8 +1,8 @@
 //
-//  PyrMeanShiftFilteringFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PyrMeanShiftFilteringFactory : NSObject
 
-//spatialWindowRadius: Double, colorWindowRadius: Double
+
 + (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data spatialWindowRadius: (double)spatialWindowRadius colorWindowRadius: (double) colorWindowRadius result: (FlutterResult) result;
+
 
 @end
 

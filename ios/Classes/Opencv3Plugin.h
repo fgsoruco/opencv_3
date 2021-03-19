@@ -1,3 +1,9 @@
+//
+//  ApplyColorMapFactory.h
+//  Runner
+//
+//  Created by fgsoruco
+//
 #ifdef __cplusplus
 #undef NO
 #import <opencv2/opencv.hpp>

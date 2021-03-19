@@ -104,7 +104,7 @@ Agregue esto al archivo `pubspec.yaml` de su paquete:
 
 ```yaml
 dependencies:
-  opencv_3: ^0.0.1-nullsafety.3
+  opencv_3: ^0.0.1-nullsafety.10
 ```
 
 ### 2. Instalar

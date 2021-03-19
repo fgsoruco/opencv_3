@@ -1,8 +1,8 @@
 //
-//  MorphologyExFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MorphologyExFactory : NSObject
 
-// operation: Int, kernelSize: ArrayList<Int>
-+ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data operation: (int)operation kernelSize: (int[]) kernelSizeDouble result: (FlutterResult) result;
+
++ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data operation: (int)operation kernelSize: (int[_Nonnull]) kernelSizeDouble result: (FlutterResult) result;
 
 @end
 

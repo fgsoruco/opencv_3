@@ -1,8 +1,8 @@
 //
-//  GaussianBlurFactory.h
+//  ApplyColorMapFactory.h
 //  Runner
 //
-//  Created by Fernando on 12/03/2021.
+//  Created by fgsoruco
 //
 #ifdef __cplusplus
 #undef NO
@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GaussianBlurFactory : NSObject
 
-//kernelSize: ArrayList<Double>, sigmaX: Double
 
-+ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data kernelSize: (double[]) kernelSizeDouble sigmaX: (double) sigmaX result: (FlutterResult) result;
+
++ (void)processWhitPathType:(int)pathType pathString:(NSString *)pathString data:(FlutterStandardTypedData *)data kernelSize: (double[_Nonnull]) kernelSizeDouble sigmaX: (double) sigmaX result: (FlutterResult) result;
+
 
 @end
 

@@ -135,7 +135,7 @@ import 'package:opencv_3/opencv_3.dart';
 # How to use
 
 ## Pre requirements
-1. If you are going to work with the asset path, flutter does not require permissions in Andorid and iOS.
+1. If you are going to work with the asset path, flutter does not require permissions in Android and iOS.
 2. If you want to work with images from URLs, no configuration is required.
 3. If the [image_picker](https://pub.dev/packages/image_picker) package is to be used to work with images from the camera and gallery, follow your permission settings for [Android and iOS](https://pub.dev/packages/image_picker#installation).
 

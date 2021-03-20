@@ -48,7 +48,7 @@
 ## Compatibilidad
 * Esta desarrollada para la integración la librería de visión artificial OpenCV en su versión 3.4.5
 * Es compatible con Android e iOS.
-* Se tuvo en cuenta la integración sencilla con paquetes populares de flutter como [image_picker](https://pub.dev/packages/image_picker) para procesar imágenes de la galería o la camara, puedes ver el ejemplo de implementación [aquí](https://www.google.com).
+* Se tuvo en cuenta la integración sencilla con paquetes populares de flutter como [image_picker](https://pub.dev/packages/image_picker) para procesar imágenes de la galería o la camara, puedes ver el ejemplo de implementación [aquí](https://pub.dev/packages/opencv_3/example), en este caso necesitas configurar tu proyecto con [Nullsafety](#cómo-utilizar).
 
 * Los módulos de OpenCV empleados son los siguientes:
   * __Image Processing__
@@ -104,7 +104,7 @@ Agregue esto al archivo `pubspec.yaml` de su paquete:
 
 ```yaml
 dependencies:
-  opencv_3: ^0.0.1-nullsafety.10
+  opencv_3: ^0.0.1-nullsafety.13
 ```
 
 ### 2. Instalar
@@ -130,6 +130,12 @@ import 'package:opencv_3/opencv_3.dart';
 1. Si se va a trabajar con el path de assets flutter no requiere permisos ni en Android e iOS.
 2. Si se desea trabajar con imágenes de la web no requiere configuración.
 3. Si se va a utilizar el paquete [image_picker](https://pub.dev/packages/image_picker) para trabajar con imágenes de la camara y galería, seguir su configuración de permisos para [Android e iOS](https://pub.dev/packages/image_picker#installation).
+4. `Nullsafety` si vas a utilizar el [ejemplo](https://pub.dev/packages/opencv_3/example) debes configurar el archivo `pubspect.yaml`
+
+```yaml
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+```
 
 
 ## Classes

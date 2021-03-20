@@ -1,6 +1,6 @@
 name: opencv_3
 description: A flutter package project which contains a collection of OpenCV modules.
-version: 0.0.1-nullsafety.10
+version: 0.0.1-nullsafety.13
 homepage: https://github.com/fgsoruco/opencv_3
 
 environment:

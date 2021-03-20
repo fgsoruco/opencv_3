@@ -11,7 +11,7 @@
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
     <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/nullsafety-0.0.1.png?raw=true"
-      alt="Platform" />
+      alt="Nullsafety" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
     <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/pub-version.png?raw=true"
@@ -54,7 +54,7 @@
 ## Compatibility
 * It is developed for the integration of the OpenCV artificial vision library in its version 3.4.5
 * It is compatible with Android and iOS.
-* Easy integration with popular flutter packages like [image_picker](https://pub.dev/packages/image_picker) was kept in mind, to process images from gallery or camera, you can see the implementation example [here](example).
+* Easy integration with popular flutter packages like [image_picker](https://pub.dev/packages/image_picker) was kept in mind, to process images from gallery or camera, you can see the implementation example [here](https://pub.dev/packages/opencv_3/example), in this case you need to configure the flutter project with [Nullsafety](#how-to-use).
 * The implemented OpenCV modules are the following:
   * __Image Processing__
     * Image Filtering
@@ -110,7 +110,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  opencv_3: ^0.0.1-nullsafety.10
+  opencv_3: ^0.0.1-nullsafety.13
 ```
 
 ### 2. Install it
@@ -138,6 +138,13 @@ import 'package:opencv_3/opencv_3.dart';
 1. If you are going to work with the asset path, flutter does not require permissions in Android and iOS.
 2. If you want to work with images from URLs, no configuration is required.
 3. If the [image_picker](https://pub.dev/packages/image_picker) package is to be used to work with images from the camera and gallery, follow your permission settings for [Android and iOS](https://pub.dev/packages/image_picker#installation).
+4. `Nullsafety` If you are going to test the [example](https://pub.dev/packages/opencv_3/example) you need to configure `pubspect.yaml`
+
+```yaml
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+```
+
 
 
 ## Classes

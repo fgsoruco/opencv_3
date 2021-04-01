@@ -1,3 +1,6 @@
+## 1.0.0
+
+- Initial Release.
 ## 0.0.1-nullsafety.13
 
 - changes in README.md file.

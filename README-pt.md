@@ -10,7 +10,7 @@
       alt="Platform" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
-    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/nullsafety-0.0.1.png?raw=true"
+    <img src="https://github.com/fgsoruco/opencv_3/blob/main/display/nullsafety.png?raw=true"
       alt="Platform" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_3">
@@ -92,9 +92,9 @@
   * `Cv2.ctvColor` 
   * `Cv2.COLOR_BGR2GRAY`
 
-## Em breve
+<!-- ## Em breve
 * Implementação de mais módulos OpenCV, estou trabalhando nisso.
-* Processamento de vídeos e gifs animados, estou trabalhando nisso.
+* Processamento de vídeos e gifs animados, estou trabalhando nisso. -->
 
 # Instalando
 
@@ -104,7 +104,7 @@ Adicione isso ao arquivo `pubspec.yaml` do seu projeto:
 
 ```yaml
 dependencies:
-  opencv_3: ^0.0.1-nullsafety.13
+  opencv_3: ^1.0.0
 ```
 
 ### 2. Instalar
